@@ -15,4 +15,5 @@ steps:
     backendAzureRmResourceGroupName: 'tfStateRG'
     backendAzureRmStorageAccountName: 'tfstatemeritobz'
     backendAzureRmContainerName: 'tfstate1'
-    backendAzureRmKey: 'tfstatemeritobz.tf'
+    backendAzureRmKey: 'tf.tfstate'
+    
