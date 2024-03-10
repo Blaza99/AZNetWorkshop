@@ -1,0 +1,18 @@
+# Starter pipeline
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    backendServiceArm: 'Azure for Students(3cedcdab-0de1-42ac-acd8-03b2b69fad02)'
+    backendAzureRmResourceGroupName: 'tfStateRG'
+    backendAzureRmStorageAccountName: 'tfstatemeritobz'
+    backendAzureRmContainerName: 'tfstate1'
+    backendAzureRmKey: 'tfstatemeritobz.tf'
