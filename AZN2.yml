@@ -1,4 +1,13 @@
 # Starter pipeline
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    backendServiceArm: 'Azure for Students(3cedcdab-0de1-42ac-acd8-03b2b69fad02)'
+    backendAzureRmResourceGroupName: 'tfStateRG'
+    backendAzureRmStorageAccountName: 'tfstatemeritobz'
+    backendAzureRmContainerName: 'tfstate1'
+    backendAzureRmKey: 'tfstatemeritobz/terraform.tfstate'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
