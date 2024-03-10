@@ -8,6 +8,7 @@
     backendAzureRmStorageAccountName: 'tfstatemeritobz'
     backendAzureRmContainerName: 'tfstate1'
     backendAzureRmKey: 'tfstatemeritobz/terraform.tfstate'
+    
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
